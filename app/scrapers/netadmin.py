@@ -55,7 +55,7 @@ async def get_article_content(session, url):
 		traceback.print_exc()
 	return None
 
-async def get_article_links(session, base_url, max_pages=10):
+async def get_article_links(session, base_url, max_pages=100):
 	"""取得文章連結列表"""
 	all_links = []
 	page = 1
